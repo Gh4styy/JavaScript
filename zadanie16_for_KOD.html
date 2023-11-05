@@ -1,0 +1,42 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Fornal()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="Fornal" cols="80" rows="25" disabled>
+ zadanie16_fornal.html
+ <!doctype html>
+ <head>
+     <title> proste obliczenia</title>
+     <meta charset="utf-8">
+ </head>
+ <body>
+     <div style="color:blue;font-size: 35px;">
+     <script lang="JavaScript">
+         var liczba1=prompt("podaj a=","");
+         var a_for=parseFloat(liczba1);
+         var liczba2=prompt("podaj b=","");
+         var b_for=parseFloat(liczba2);
+         document.write("a="+a_for+"<br>");
+         document.write("b="+b_for+"<br>");
+         document.write("("+a_for+"+"+b_for+")^3=");
+         document.write(+a_for+"^"+"3+3*"+a_for+"^2*"+b_for+"+3*"+a_for+"*"+b_for+"^2+"+b_for+"^"+"3"+"=");
+         document.write(+a_for*a_for*a_for+3*(a_for*a_for)*b_for+3*a_for*(b_for*b_for)+b_for*b_for*b_for);
+     </script>
+     </div>
+ </body>
+ </html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Fornal()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

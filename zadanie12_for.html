@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<title> proste obliczenia</title>
+<meta charset="utf-8">
+</head>
+<body>
+    <div style="color:blue;font-size: 35px;">
+    <script lang="JavaScript">
+        var liczba1=prompt("D1=",""); 
+        var liczba3=prompt("G1=","");
+        var liczba2=prompt("D2=","");
+        var liczba4=prompt("G2=","");
+        var ile_dni;
+        var ile_sekund;
+        var ile_razem;
+        var D1_for=parseFloat(liczba1);
+        var D2_for=parseFloat(liczba2);
+        var G1_for=parseFloat(liczba3);
+        var G2_for=parseFloat(liczba4);
+
+        ile_dni=(D1_for-D2_for)*24*3600;
+        ile_sekund=(G1_for-G2_for)*3600;
+        ile_razem=ile_dni+ile_sekund;
+        document.write("D1="+D1_for+"G1="+G1_for+"D2="+D2_for+"G2="+G2_for+"<br>")
+        document.write("ile sekund="+ile_razem+"s"+ "<br>")
+    </script>
+    </div>
