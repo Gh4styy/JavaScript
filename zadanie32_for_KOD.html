@@ -1,0 +1,40 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Fornal()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="Fornal" cols="80" rows="25" disabled>
+    <html>
+ <head>
+ <script type="text/javascript">
+ function samochod(plyta_glowna_k,RAM_k,procesor_k)
+{
+this.plyta_glowna=plyta_glowna_k;
+this.RAM=RAM_k;
+this.procesor=procesor_k;
+}
+ komputer.prototype.wypisz_fornal = function () 
+ {
+ alert(this.plyta_glowna + ' ' + this.RAM+ ' ' + this.procesor);
+ };
+var komputer1 = new komputer('asus b450 plus II', '2x 8GB DDR4 good ram', 'amd ryzen 5 3600'); 
+var komputer2 = new komputer('aorus b450', '2x 16GB DDR4 good ram', 'amd ryzen 5 3600X');
+komputer1.wypisz_fornal(); 
+komputer2.wypisz_fornal();
+ document.write("dostęp do właściwości"+"<br>");
+
+ document.write("komputer pierwszy"+" "+kompute1.plyta_glowna+" "+komputer1.RAM1+" "+komputer1.procesor);
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe
+</body>
+</html>
