@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sprawdzenie parzystości liczby</title>
+    <script>
+        function checkParity() {
+            var input = prompt("Podaj liczbę", "");
+            var number = parseInt(input);
+
+            if (number % 2 === 0) {
+                document.write('<h1 style="color: red; font-size: 3;">Liczba jest parzysta</h1><br />');
+            } else {
+                document.write('<h1 style="color: silver; font-size: 5;">Liczba jest nieparzysta</h1><br />');
+            }
+        }
+    </script>
+</head>
+<body>
+
+<input type="button" name="sprawdz" value="Sprawdź" onclick="checkParity()" />
+
+</body>
+</html>

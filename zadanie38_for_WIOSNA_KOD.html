@@ -1,0 +1,118 @@
+<html>
+	<head>
+	 <script type="text/javascript">
+	 function okno_zamknij_Fornal()
+	 {
+	 window.close()
+	 }
+	21
+	 </script>
+	</head>
+	<body>
+		 <form>
+		 <textarea name="Fornal" cols="80" rows="25" disabled>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Przedziały liczbowe</title>
+    <style>
+        .menuOption {
+            font-size: 180px;
+        }
+        .errorMessage {
+            font-size: 200px;
+        }
+    </style>
+    <script>
+        var Imie = prompt("Podaj imię:");
+        var Nazwisko = prompt("Podaj nazwisko:");
+        var dzienUrodzenia = prompt("Podaj dzień urodzenia:");
+        var DR = parseInt(dzienUrodzenia);
+        var liczba1 = Imie.length;
+        var liczba2 = liczba1 + 7;
+        var liczba3 = Nazwisko.length;
+        var liczba4 = liczba3 + 4;
+        var stylWyświetlenia = "color: green; font-size: 66px; background-color: silver;";
+        document.write("<div style='" + stylWyświetlenia + "'>");
+        document.write("Imię: " + Imie + "<br>");
+        document.write("Nazwisko: " + Nazwisko + "<br>");
+        document.write("liczba1 = " + liczba1 + "<br>");
+        document.write("liczba2 = " + liczba2 + "<br>");
+        document.write("liczba3 = " + liczba3 + "<br>");
+        document.write("liczba4 = " + liczba4 + "<br>");
+        document.write("</div>");
+        document.write("<br>");
+        var stylWyświetlenia2 = "color: red; font-size: 23px; background-color: silver;";
+        document.write("<div style='" + stylWyświetlenia2 + "'>");
+        document.write("---------------MENU-------------" + "<br>");
+        document.write("<span class='menuOption' style='font-size: 280px;'>" + liczba1 + " - wyświetlanie teorii o operatorach logicznych</span>" + "<br>");
+        document.write("<span class='menuOption' style='font-size: 280px;'>" + (liczba3 + 20) + " - sprawdzanie czy liczba należy do przedziału (od " + liczba1 + " do " + liczba2 + "]</span>" + "<br>");
+        document.write("<span class='menuOption' style='font-size: 280px;'>" + (DR + 50) + " - sprawdzanie czy liczba należy do przedziału (od -oo; " + liczba3 + ") do [" + liczba4 + ";+oo)</span>" + "<br>");
+        document.write("</div>");
+
+        function pobierzOpcje() {
+            var opcja = prompt("Podaj wartość dla opcji:");
+            if (opcja == liczba1) {
+                var stylWyświetlenia4 = "color: blue; font-size: 92px; background-color: silver;";
+                document.write("<div style='" + stylWyświetlenia4 + "'>");
+                document.write("<span style='font-size: 250px;'>Jesteś w opcji " + liczba1 + "-->teoria</span>");
+                document.write("</div>");
+                var stylWyświetlenia5 = "color: green; font-size: 92px; background-color: silver;";
+                document.write("<div style='" + stylWyświetlenia5 + "'>");
+                document.write("<span style='font-size: 250px;'>&& i x=3 y=4(x<9 && y>2)wynik-->prawda" + "<br>");
+                document.write("|| lub x=3 y=4(x==8 || y==6)wynik-->falsz" + "<br>");
+                document.write("! zaprzeczanie x=3 y=4 !(x==y)wynik-->prawda</span>" + "<br>");
+                document.write("</div>");
+            }
+
+            if (opcja == liczba3 + 20) {
+                var stylWyświetlenia6 = "color: green; font-size: 92px; background-color: silver;";
+                document.write("<div style='" + stylWyświetlenia6 + "'>");
+                document.write("<span style='font-size: 250px;'>Jesteś w opcji " + liczba3 + 20 + "-->przedzial</span>" + "<br>");
+                var liczba = prompt("Podaj liczbe:");
+                var Liczba = +liczba;
+                if (Liczba > liczba1 && Liczba <= liczba2) {
+                    document.write("<span style='font-size: 250px;'>liczba nalezy do przydzialu</span>" + "<br>");
+                } else {
+                    document.write("<span style='font-size: 250px;'>liczba nie nalezy do przydzialu</span>" + "<br>");
+                }
+                document.write("</div>");
+            }
+            if (opcja == DR + 50) {
+                var number = DR + 50;
+                var stylWyświetlenia7 = "color: green; font-size: 92px; background-color: silver;";
+                document.write("<div style='" + stylWyświetlenia7 + "'>");
+                document.write("<span style='font-size: 250px;'>Jesteś w opcji " + number + "-->przedzial</span>" + "<br>");
+                var liczba = prompt("Podaj liczbe:");
+                var Liczba = +liczba;
+                if (Liczba < liczba3 || Liczba >= liczba4) {
+                    document.write("<span style='font-size: 250px;'>liczba nalezy do przydzialu</span>" + "<br>");
+                } else {
+                    document.write("<span style='font-size: 250px;'>liczba nie nalezy do przydzialu</span>" + "<br>");
+                }
+                document.write("</div>");
+            }
+
+            if ((opcja != liczba1) && (opcja != liczba3 + 20) && (opcja != DR + 50)) {
+                var stylWyświetlenia3 = "color: red; font-size: 72px; background-color: silver;";
+                document.write("<div style='" + stylWyświetlenia3 + "'>");
+                document.write("<span style='font-size: 250px;'>Nie ma takiej opcji</span>" + "<br>");
+                document.write("</div>");
+                document.write("<button onclick='window.location.reload();' style='font-size: 92px;'>Powrót do wyboru opcji</button>");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="pobierzOpcje()" style="font-size: 150px;">Wpisz opcję</button>
+</body>
+</html>
+		 
+		 </textarea>
+		</form>
+		<input type="button" value="zamknij okno" onclick="okno_zamknij_Fornal()"/>
+		<script type="text/javascript">
+		</script>
+	</body>
+</html>
