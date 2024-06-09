@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rysowanie Prostokąta Fornal</title>
+    <style>
+        pre {
+            font: 20px monospace;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body>
+<pre id="rectangle"></pre>
+<script language="JavaScript">
+    var a_for = (8 % 4) + 5; // 7
+    var b_for = (5 % 6) + 20; // 25
+    var prostokat = "";
+    for (var i = 0; i < 25; i++) {
+        prostokat += "*";
+    }
+    prostokat += "\n";
+    for (var i = 0; i < 5; i++) {
+        prostokat += "*";
+        for (var j = 0; j < 23; j++) {
+            prostokat += " ";
+        }
+        prostokat += "*\n";
+    }
+    for (var i = 0; i < 25; i++) {
+        prostokat += "*";
+    }
+    prostokat += "\n";
+    document.getElementById("rectangle").textContent = prostokat;
+</script>
+</div>
+</body>
+</html>

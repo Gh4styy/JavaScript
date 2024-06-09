@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+
+  <div class="output">
+    <div class="result" id="left">
+      <script language="Javascript">
+        for(i = 1; i <= (1 + 15); i++) { 
+          p_2_for = Math.sqrt(i).toFixed(2); 
+          document.write("i=" + i + " pierw_2=" + p_2_for + "<br>"); 
+        }
+      </script>
+    </div>
+    <div class="result" id="right">
+      <script language="Javascript">
+        for(i = 1; i <= (1 + 15); i++) { 
+          p_2_for = Math.sqrt(i).toFixed(2); 
+          p_4_for = Math.sqrt(p_2_for).toFixed(2); 
+          document.write("i=" + i + " pierw_4=" + p_4_for + "<br>"); 
+        }
+      </script>
+    </div>
+  </div>
+
+</body>

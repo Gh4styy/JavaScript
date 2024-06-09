@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Rysowanie Prostokąta Fornal</title>
+</head>
+<body>
+<div style="color:black;font-size:20px;">
+<script language="JavaScript">
+    var a_for = parseInt(prompt("Podaj wysokość (a):", ""));
+    var b_for = parseInt(prompt("Podaj szerokość (b):", ""));
+    for (var i = 0; i < b_for; i++) {
+        document.write("*");
+    }
+    document.write("<br>");
+    var wiersz_for = "*";
+    for (var i = 1; i <= (b_for - 2); i++) {
+        wiersz_for += "&nbsp&nbsp";
+    }
+    wiersz_for += "*";
+    for (var i = 1; i <= (a_for - 2); i++) {
+        document.write(wiersz_for + "<br>");
+    }
+    for (var i = 0; i < b_for; i++) {
+        document.write("*");
+    }
+    document.write("<br>");
+</script>
+</div>
+</body>
+</html>

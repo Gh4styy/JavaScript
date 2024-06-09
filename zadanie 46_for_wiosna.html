@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprawdzenie danych Fornal</title>
+</head>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+    var h, a;
+    do {
+        var liczba1 = prompt("Podaj wysokość trójkąta:", "");
+        h = parseFloat(liczba1);
+    } while (h <= 0);
+    do {
+        var liczba2 = prompt("Podaj podstawę trójkąta:", "");
+        a = parseFloat(liczba2);
+    } while (!(a > 0));
+    var Pole = (a * h) / 2;
+    document.write("Pole trójkąta = " + Pole.toFixed(2) + " cm²<br>");
+</script>
+</div>
+</body>
+</html>
